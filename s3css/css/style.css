@@ -1,0 +1,54 @@
+
+h1{
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 2.5%;
+    height: 10vh;
+}
+.flex{
+    display: flex;
+}
+.centrado{
+    background-color: blueviolet;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+.centrado div{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+}
+.esquinas{
+    width: 100%;
+    height: 50vh;
+    background-color:lightgreen;
+    justify-content: space-between;
+}
+.esquinas div{
+    flex-direction: column;
+    justify-content:space-between ;
+}
+.esquinas div div{
+
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+}
+.tres{
+    background-color: lightpink;
+    width: 100%;
+    height: 50vh;
+    justify-content: space-between;
+}
+.tres div div{
+    background-color: mediumseagreen;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+
+}
+.abj{
+    align-items: flex-end;
+}
