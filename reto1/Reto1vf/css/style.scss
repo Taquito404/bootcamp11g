@@ -843,6 +843,7 @@ footer{
         @media screen and (min-width: 992px){  
             display: initial;
             margin: auto;
+            display: block;
             width: 44px;
             height: 44px;
             margin-top: 20px;
@@ -851,7 +852,7 @@ footer{
 }
 
 @media screen and (min-width:375px) and (max-width:768px) {
-        .ojas-footer, .peresozo-footer {
+        .hojas-footer, .peresozo-footer {
             display: none;
         }
         .bold{
