@@ -1,0 +1,200 @@
+.img_fondo{
+    font-family: 'Public Sans', sans-serif;
+}
+
+/*estilos de cartas con imagen movil*/
+
+.tarjeta_img{
+    text-align: center;
+    p:nth-of-type(1){
+        color: black;
+        font-size: 40px;
+    }
+    p:nth-of-type(2){
+        color: black;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    p:nth-of-type(3){
+        color: gray;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+    p:nth-of-type(4){
+        color: gray;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    p:nth-of-type(5){
+        color: gray;
+        font-size: 18px;
+    }
+}
+
+.tarjeta_img1{
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.texto_parrafo{
+    text-align: center;
+    
+    p:nth-of-type(1){
+        color: black;
+        font-size: 29px;
+        margin-bottom: 30px;
+
+    }
+    p:nth-of-type(2){
+        color: gray;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+    p:nth-of-type(3){
+        color: gray;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+    p:nth-of-type(4){
+        color: gray;
+        font-size: 18px;
+        margin-bottom: 60px;
+
+    }
+}
+
+.t_img_tarjeta{
+    font-size: 30px;
+    color: slategray;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.tarjeta_img2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    .imagen_tarjeta{
+        margin: 30px 20px 0px 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .caja-texto2{
+        background-color: white;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    p:nth-of-type(1){
+        color: gray;
+        font-size: 15px;
+        font-weight:normal;
+        margin-bottom: 15px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    p:nth-of-type(2){
+        color: black;
+        font-size: 20px;
+        font-weight:lighter;
+        margin-bottom: 15px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    p:nth-of-type(3){
+        color: gray;
+        font-size: 17px;
+        font-weight:lighter;
+        margin-bottom: 35px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+
+/*estilos de footer movil*/
+*{
+    margin: 0;
+    font-size: 22px;
+}
+
+.footer{
+    background-color: #2E314E;
+    height: 80vh;
+}
+    
+.flex{
+    display: flex;
+}
+.row{
+    flex-direction: row;
+}
+.colum{
+    flex-direction: column;
+}
+
+li{
+    list-style-type: none;
+}
+
+.center{
+    align-items: center;
+}
+
+.iconos img{
+width: 30px;
+margin: 20px 10px 20px 10px;
+}
+
+.footer_log{
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+ul{
+    padding-left: 0;
+
+    li{
+        margin-bottom: 20px;
+        color: white;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }   
+}
+
+li:nth-of-type(1){
+    margin-top: 20px; 
+}
+
+li:nth-of-type(6){
+    margin-bottom: 40px;
+}
+
+li:nth-of-type(7){
+    background: linear-gradient(to right, rgb(117, 182, 122), rgb(17, 218, 218));
+    padding: 20px 50px 20px 50px;
+    border-radius: 240px;
+    margin-bottom: 30px;
+    color: white;
+    
+}
+
+li:nth-of-type(8){
+    color: gray;
+}

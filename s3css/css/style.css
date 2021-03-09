@@ -52,3 +52,39 @@ h1{
 .abj{
     align-items: flex-end;
 }
+.cuatro{
+    height: 50vh;
+    width: 100%;
+    background-color: mediumslateblue;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    background-color: mediumvioletred;
+    height: 35%;
+    width: 100%;
+    justify-content: space-between;
+}
+.header div{
+    margin: 5px;
+}
+.cuadro{
+    width: 13vw;
+    height: auto;
+    background-color: palegreen;
+}
+.rectangulo{
+    width: 50vw;
+    height: auto;
+    background-color: palegreen;
+}
+.contenido{
+    background-color:plum ;
+    width: 100% ;
+    height: 30%;
+}
+.contenido div{
+    flex-grow: inherit;
+    background-color: khaki;
+    margin: 3px;
+}

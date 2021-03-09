@@ -1,0 +1,213 @@
+$Dark-Blue: hsl(233, 26%, 24%);
+$Lime-Green: hsl(136, 65%, 51%);
+$Bright-Cyan: hsl(192, 70%, 51%);
+
+$Grayish-Blue: hsl(233, 8%, 62%);
+$Light-Grayish-Blue: hsl(220, 16%, 96%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+*{
+    font-family: 'Public Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+.menu{
+    list-style: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-start{
+    justify-content: flex-start;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-b{
+    justify-content: space-between;
+}
+.m-left{
+    margin-left:10vw;
+    margin-top:20vh;
+}
+//movil
+
+
+ .f-d-row{
+     flex-direction: column;
+     align-content: center;
+     text-align: center;
+ }
+ p{
+    color: $Dark-Blue;
+    font-size: 18;
+    font-weight: 300;
+    line-height: 170%;
+    margin-top: 5%;
+}
+ .dos {
+
+     h3{
+    margin-top: 20%;
+    margin-bottom: 2%;
+    font-weight: 400;
+    font-size: 2rem;
+    color: $Dark-Blue;
+     }
+ }
+ .dosdos{
+     img{
+         padding-top: 15%;
+     }
+     h3{
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $Dark-Blue;
+     }
+ }
+.p-left-right{
+    padding:0 10%;
+}
+
+
+ @media only screen and ( min-width: 1440px ){
+    .height1{
+        height: 700px;
+    }
+
+    p{
+        color: $Dark-Blue;
+        font-size: 18;
+        font-weight: 300;
+        line-height: 170%;
+        margin-top: 5%;
+    }
+    .uno{
+        width: 30vw;
+
+    
+        h2{
+            margin-top: 0;
+            margin-bottom: 2%;
+            font-weight: 300;
+            font-size: 3.5rem;
+            color: $Dark-Blue;
+        }
+        button{
+            background-image:linear-gradient(90deg,  hsl(136, 65%, 51%),  hsl(192, 70%, 51%) );
+            height: 3rem;
+            border: none;
+            width: 11vw;
+            color: $White;
+            border-radius: 30px;
+            margin-top: 5%;
+        }
+    }
+    .bg-general{
+        background-image:linear-gradient(180deg, $Light-Grayish-Blue,$Very-Light-Gray);
+  
+
+
+    }
+
+    .bg-i-dt{
+
+        width: 89%;
+        top:-37%;
+        right:-27%;
+
+
+    }
+ .crop{
+    overflow-x: hidden;
+    overflow-y:visible;
+
+  
+ }
+    .p-relative{
+        position: relative;;
+    }
+    .p-absolute{
+        position: absolute;
+    }
+    .img-moc{
+
+        width: 55%;
+        top: -15%;
+        right:-10% ;
+
+
+    }
+.dosuno{
+        width: 100vw;
+        margin-left: 0%;
+        margin-right: 0%;
+    
+ 
+}
+.dos{
+
+   
+    margin-top: 0%;
+    padding-top: 5%;
+    h3{
+        text-align: left;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 0%;
+        color: $Dark-Blue;
+        margin-bottom: 2%;
+    }
+    p{
+        margin-top: 2%;
+        width: 50%;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+}
+.dosdos{
+  
+    flex-direction: row;
+ 
+    margin-left: 10vw;
+    margin-right:  10vw;
+    margin-top: 3%;
+    padding:0%;
+    text-align: left;
+
+    img{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 10%;
+        color: $Dark-Blue;
+        margin-bottom: 2%;
+    }
+    div{
+        margin: 2%;
+    }
+    div:nth-of-type(1){
+        margin-left: 0%;
+    }
+    p{
+        font-size: 15;
+    }
+}
+
+
+ }
+

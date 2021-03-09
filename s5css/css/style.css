@@ -1,0 +1,65 @@
+* {
+  font-family: 'Public Sans', sans-serif;
+}
+
+.menu {
+  list-style: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul li {
+  display: none;
+}
+
+nav button {
+  display: none;
+}
+
+.justify-b {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: yellow;
+}
+
+@media only screen and (min-width: 992px) {
+  .hamburguesa {
+    display: none;
+  }
+  nav {
+    background-color: white;
+    padding: 1rem;
+    margin: 0 5%;
+  }
+  li {
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+  }
+}
