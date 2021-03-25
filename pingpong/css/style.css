@@ -1,0 +1,93 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.board {
+  width: 800px;
+  height: 400px;
+  background-color: #217021;
+  padding: 1rem;
+  position: relative;
+}
+
+@-webkit-keyframes ball-move {
+  0% {
+    background-color: yellow;
+    left: 754px;
+    bottom: 212.5px;
+  }
+  25% {
+    background-color: magenta;
+    left: 412.5px;
+    bottom: 16px;
+  }
+  50% {
+    background-color: yellow;
+    left: 16px;
+    bottom: 212.5px;
+  }
+  75% {
+    background-color: magenta;
+    left: 412.5px;
+    bottom: 374px;
+  }
+  100% {
+    background-color: yellow;
+    left: 754px;
+    bottom: 212.5px;
+  }
+}
+
+@keyframes ball-move {
+  0% {
+    background-color: yellow;
+    left: 754px;
+    bottom: 212.5px;
+  }
+  25% {
+    background-color: magenta;
+    left: 412.5px;
+    bottom: 16px;
+  }
+  50% {
+    background-color: yellow;
+    left: 16px;
+    bottom: 212.5px;
+  }
+  75% {
+    background-color: magenta;
+    left: 412.5px;
+    bottom: 374px;
+  }
+  100% {
+    background-color: yellow;
+    left: 754px;
+    bottom: 212.5px;
+  }
+}
+
+.ball {
+  position: absolute;
+  left: 754px;
+  bottom: 212.5px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation-name: ball-move;
+          animation-name: ball-move;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+/*# sourceMappingURL=style.css.map */

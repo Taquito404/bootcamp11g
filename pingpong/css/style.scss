@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    width: 800px;
+    height: 400px;
+    background-color: rgb(33, 112, 33);
+    padding: 1rem;
+    position: relative;
+}
+
+@keyframes ball-move{
+    0%{
+        background-color: yellow;
+        left: 754px;
+        bottom:212.5px;
+    }
+    25%{
+        background-color: magenta;
+        left:412.5px;
+        bottom:16px;
+    }
+    50%{
+        background-color: yellow;
+        left: 16px;
+        bottom:212.5px;
+    }
+    75%{
+        background-color: magenta;
+        left:412.5px;
+        bottom:374px;
+    }
+    100%{
+        background-color: yellow;
+        left: 754px;
+        bottom:212.5px;
+    }
+
+}
+.ball{
+    position: absolute;
+    left: 754px;
+    bottom:212.5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation-name: ball-move;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
