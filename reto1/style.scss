@@ -1,0 +1,11 @@
+.bg-{
+    &violet{ background-color: rgb(115, 63, 200);}
+    &gray {background-color: rgb(73, 85, 107);}
+    &dark-gray { background-color: rgb(24, 32, 45);}
+    &background { background-color: rgb(237, 242, 248);}
+    
+}
+$violet-text: rgb(167, 117, 242) ;
+$gray-text: rgb(166, 174, 188);
+$blue-bold-text: rgb(75, 85, 105);
+$blue-light-text: rgb(147, 152, 162);
