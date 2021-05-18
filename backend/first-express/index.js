@@ -8,7 +8,7 @@ const express = require ('express')
 const server = express()
 
 const kodersRouter = require('./routers/koders')
-const mentorsRouter = require('./routers/koders')
+const mentorsRouter = require('./routers/mentors')
 
 // middleware
 server.use(express.json())
