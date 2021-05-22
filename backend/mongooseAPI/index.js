@@ -15,63 +15,88 @@ const DB_NAME = 'kodemia'
 const url = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`
 
 
+// server.get('/koders', async (request, response) => {
+
+//   const allKoders = await Koder.find({})
+
+//   response.json({
+//     message: 'all koders',
+//     success: true,
+//     data: {
+//       koders: allKoders
+//     }
+//   })
+// })
+
 server.get('/koders', async (request, response) => {
+  // const genderK = request.params.genderKoder
+  // let allKoders = await Koder.find({})
+  // let filteredKoderByGender = genderK ? allKoders.filter(koder => koder.gender == genderK) : null
 
-  const allKoders = await Koder.find({})
+  // if (!filteredKoderByGender) {
+  //   response.status(404)
+  //   response.json({
+  //     success: false,
+  //     message: 'No hay koders disponibles :c'
+  //   })
+  //   return
+  // }
+  const gender = request.query.gender
 
+  const filters = {}
+  if (gender) filters.gender = gender
+
+  const allKoders = await Koder.find(filters)
+  // if (filteredKoderByGender) {
+  // allKoders = filters
   response.json({
-    message: 'all koders',
     success: true,
+    message: 'Se encontraron coincidencias',
     data: {
       koders: allKoders
     }
   })
-})
-
-server.get('/koders/:genderKoder', async (request, response) => {
-  const genderK = request.params.genderKoder
-  let allKoders = await Koder.find({})
-  let filteredKoderByGender = genderK ? allKoders.filter(koder => koder.gender == genderK) : null
-
-  if (!filteredKoderByGender) {
-    response.status(404)
-    response.json({
-      success: false,
-      message: 'No hay koders disponibles :c'
-    })
-    return
-  }
-  if (filteredKoderByGender) {
-    allKoders = filteredKoderByGender
-    response.json({
-      success: true,
-      message: 'Se encontraron coincidencias',
-      data: {
-        koders: allKoders
-      }
-    })
-  }
+  // }
 })
 
 server.post('/koders', async (request, response) => {
-  const name = request.body.name
-  const lastName = request.body.lastName
-  const age = request.body.age
-  const gender = request.body.gender
 
-  const newKoder = { name, lastName, age, gender }
+  // if (!name || !lastName || !age || !gender){
+  //   response.status(400)
+  //   response.json({
+  //     success: false,
+  //     message: "all fields are required"
+  //   })
+  //   return
+  // }
 
-  console.log(newKoder)
+  try {
+    const name = request.body.name
+    const lastName = request.body.lastName
+    const age = request.body.age
+    const gender = request.body.gender
+    const newKoder = { name, lastName, age, gender }
 
-  await Koder.create(newKoder)
+    console.log(newKoder)
+    await Koder.create(newKoder)
+    response.json({
+      success: true,
+      message: 'Se ha agregado un nuevo Koder'
+    })
+  } catch (error) {
+    response.status(400)
+    response.json({
+      success: false,
+      message: error.message
+    })
+  }
 
-  response.json({
-    success: true,
-    message: 'Se ha agregado un nuevo Koder'
-  })
+  
+
+
 })
 
-mongoose.connect(url, { userNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((conn) => {
     server.listen(8080, () => {
       console.log('server is listening')
@@ -93,4 +118,11 @@ GET /koders
 -lastname-
 -age
 -gender
+
+const gender = request.query.gender
+
+const filters  = {}
+if (gender) filters.gender = gender
+
+const allKoders = await Koder.find(filters)
 */
