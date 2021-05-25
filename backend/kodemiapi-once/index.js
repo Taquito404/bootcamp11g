@@ -43,3 +43,25 @@ mentores
 -modulo ['front, 'back. 'cloud, 'react]
 
  */
+
+//autenticación
+
+//autorización
+
+//bcrypt
+//jwt
+//flujo de registro y loggeo
+/*
+registro
+1.- otorgamos datos de usuario
+	email
+	password
+	name
+2.- validación de usuario existente
+3.- encriptar el password
+4.- guardar en la base de datos
+
+bcrypt -> encriptar
+lib/bcypt
+modelo, caso de uso, rutas
+*/
