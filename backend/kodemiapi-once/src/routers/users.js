@@ -38,7 +38,29 @@ router.get('/', async (request, response) => {
     response.status(400)
     response.json({
       success: false,
-      message: 'Cound not register',
+      message: 'Could not register',
+      error: error.message
+    })
+  }
+})
+
+router.post('/login', async (request,response) => {
+  try{
+    const { email, password } = request.body
+    const token = await users.login(email,password)
+
+    response.json({
+      succes: true,
+      message: 'Logged in',
+      data: {
+        token
+      }
+    })
+  }catch(error){
+    response.status(400)
+    response.json({
+      success: false,
+      message: 'Could not login',
       error: error.message
     })
   }

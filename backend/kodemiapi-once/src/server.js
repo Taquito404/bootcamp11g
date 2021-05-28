@@ -2,6 +2,7 @@
 // este archivo aloja la definición de nuestro servidor
 
 const express = require('express')
+const cors = require('cors')
 
 const kodersRouter = require('./routers/koders')
 const mentoresRouter = require('./routers/mentores')
@@ -9,6 +10,8 @@ const usersRouter = require('./routers/users')
 const logger = require('./middlewares/logger')
 
 const app = express()
+
+app.use(cors())
 
 app.use(express.json())
 
